@@ -9,12 +9,15 @@ app.config(function($routeProvider, $locationProvider){
 
     $routeProvider.when('/login',
         {
-            templateUrl: '/views/login.html',
+            templateUrl: '/partials/login.html',
             controller: 'loginController'
         }).when('/register',
         {
-            templateUrl: '/views/register.html',
+            templateUrl: '/partials/register.html',
             controller: 'registerController'
+        }).when('/',
+        {
+            templateUrl: '/partials/home.html'
         })
 });
 
