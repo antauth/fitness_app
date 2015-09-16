@@ -12,6 +12,9 @@ app.config(function($routeProvider, $locationProvider){
         {
             templateUrl: '/partials/register.html',
             controller: 'registerController'
+        }).when('/',
+        {
+            templateUrl: '/partials/home.html'
         })
 });
 
